@@ -4,10 +4,10 @@ key = "623765da-31dd-384c-a5d3-2469016df6ac"
 print("Hello, Python!")
 text = "Fire Bolt. cantrip evocation. Casting Time: 1 action. Range: 120 feet. Components: V S. Duration: Instantaneous. Classes: Sorcerer, Wizard. You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 fire damage. A flammable object hit by this spell ignites if it isn’t being worn or carried."
 
-fred_module_Joel.getFredGraph(text, key, "my_output.rdf")
-graph = "my_output.rdf"
-fred_module_Joel.checkFredSentence(
-    "How much damage does firebolt do?", key, graph)
+fred_module_Joel.generateRDF(text, "my_output.rdf")
+# graph = "my_output.rdf"
+# fred_module_Joel.checkFredSentence(
+#     "What happens to worn or carried items", key, graph)
 # # create an instance of the API class
 # api_instance = swagger_client.DefaultApi()
 # # String | The prefix used for the namespace of terms introduced by FRED in the output. If not specified fred: is used as default. (optional)

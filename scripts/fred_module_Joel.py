@@ -7,7 +7,7 @@ from rdflib.serializer import Serializer
 from rdflib.plugins.memory import IOMemory
 
 __author__ = 'Misael Mongiovi, Andrea Giovanni Nuzzolese'
-
+key = "623765da-31dd-384c-a5d3-2469016df6ac"
 plugin.register('application/rdf+xml', Serializer, 'rdflib.plugins.serializers.rdfxml', 'XMLSerializer')
 plugin.register('xml', Serializer, 'rdflib.plugins.serializers.rdfxml', 'XMLSerializer')
 
