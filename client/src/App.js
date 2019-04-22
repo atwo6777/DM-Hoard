@@ -17,7 +17,7 @@ class App extends Component {
   }
   backend =() =>{
     console.log('test')
-    axios.get("http://localhost:3001/spell", 5).then((res)=>{
+    axios.get("http://localhost:1984/test", 5).then((res)=>{
       console.log(res.data)
     })
   }
