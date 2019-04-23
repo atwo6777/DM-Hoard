@@ -1,66 +1,11 @@
-const bodyParser = require("body-parser");
 const express = require("express");
-const path = require("path");
-const cors = require('cors')
+const router = express.Router();
 
-const serverRouter = require("./router")
+const SpellController = require("./controller/spell.js")
+router.get("/findSpell", SpellController.default.findSpell)
+// SpellController.default.find_spell)
 
-class App{
-    constructor() {
-        this.express = express();
-        this.middleware();
-        this.routes();
-        
-    }
-    middleware() {
-        this.express.use(express.static(__dirname));
-        this.express.use(bodyParser.urlencoded())
-        this.express.use(bodyParser.json());
-        this.express.use(cors())
-    }
-    routes() {
-        this.express.use("/server", serverRouter )
-        this.express.get("*", (req, res)=>{
-            res.sendFile(path.resolve(__dirname, "index.html"));
-        })
-    }
-}
-
-exports.default = new App().express;
-
-
-/* Start of working stuff
-
-import Spell from "./controller/spell"
-
-const express = require("express");
-const basex  = require("basex");
-const http = require('http')
-const cors = require('cors')
-const bodyParser = require("body-parser");
-const app = express()
-
-app.use(bodyParser.urlencoded())
-app.use(bodyParser.json())
-app.use(cors())
-
-const port = 1984
-const connection = new basex.Session("localhost", port, "admin", "admin", "db460");
-
-// connection.connect(function(err) {
-//   if (!!err) {
-//     console.log("Error: " + err);
-//   } else {
-//     console.log("Connected");
-//   }
-// });
-
-app.get("/findSpell", (req, res)=>{
-  res.send("Backend")
-})
-
-app.listen(1984);
-
+module.exports = router
 // const router = express.Router()
 // const server = http.createServer(app);
 
@@ -155,4 +100,3 @@ app.listen(1984);
 // // });
 
 // // module.exports = app;
-*/

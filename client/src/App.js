@@ -16,8 +16,8 @@ class App extends Component {
     }
   }
   backend =() =>{
-    console.log('test')
-    axios.get("http://localhost:1984/test", 5).then((res)=>{
+    console.log('Sending Backend')
+    axios.get("http://localhost:1984/server/findSpell", 5).then((res)=>{
       console.log(res.data)
     })
   }
