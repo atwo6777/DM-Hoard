@@ -1,11 +1,12 @@
 const express = require("express");
 const router = express.Router();
 
-const SpellController = require("./controller/spell.js")
-router.get("/findSpell", SpellController.default.findSpell)
+const SpellController = require("./controller/spell.js");
+router.get("/findSpell", SpellController.default.findSpell);
+router.post("/findSpellByName", SpellController.default.findSpellByName);
 // SpellController.default.find_spell)
 
-module.exports = router
+module.exports = router;
 // const router = express.Router()
 // const server = http.createServer(app);
 
@@ -17,8 +18,6 @@ module.exports = router
 // router.get('/test', (req,res)=>{
 //     res.send("It worked")
 // })
-
-
 
 // function onListening() {
 //   // var addr = server.address();
@@ -61,8 +60,6 @@ module.exports = router
 // // })
 // // const text = 'for $i in 10 return $i'
 
-
- 
 // //  client.query(query, data=>{
 //   // console.log("query?")
 // //   console.log(data)

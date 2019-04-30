@@ -1,4 +1,4 @@
-const basex = require('basex');
+const basex = require("basex");
 const server = new basex.Session("localhost", 1984, "admin", "admin");
 
 // var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
@@ -10,23 +10,36 @@ const server = new basex.Session("localhost", 1984, "admin", "admin");
 //   });
 // };
 
-
-
-class SpellController{
-  async findSpell(req, res){
-    console.log("Beginning of excecution")
-    let query = server.query('for $i in (1 to 10)\
+class SpellController {
+  async findSpell(req, res) {
+    console.log("Beginning of excecution");
+    let query = server.query(
+      "for $i in (1 to 10)\
     return\
-      <value>{$i}</value>', (event)=>{console.log(event)})
+      <value>{$i}</value>",
+      event => {
+        console.log(event);
+      }
+    );
     // query.execute((e,r)=>{res.send(query.results +" "+ e + " " + r)})
     // res.send(query.results)
     // console.log(query.result)
     // res.send(JSON.stringify(result))
-    console.log("Ending of excecution")
+    console.log("Ending of excecution");
+  }
+
+  async findSpellByName(req, res) {
+    console.log("Reached");
+    let queryText = 'for $x in doc("' + req + '")return $x';
+    console.log("Finished");
+    // res.send(server.query(queryText))
+    res.send(
+      "<div id='mw-content-text' lang='en' dir='ltr' class='mw-content-ltr mw-content-text'><table class='article-table'><caption><i>1st-level abjuration</i></caption> <tbody><tr> <th>Casting Time </th><td>1 minute (Ritual) </td></tr> <tr> <th>Range </th><td>30 feet </td></tr> <tr> <th>Components </th><td>V S M (Tiny bell, fine silver wire) </td></tr> <tr> <th>Duration </th><td>8 hours </td></tr></tbody></table> <p>Choose an area that is no larger than a 20-foot <a href='/wiki/Magic#Area_of_Effect' title='Magic'>cube</a>. Until the spell ends, an alarm alerts you whenever a Tiny or larger <a href='/wiki/Creature' title='Creature'>creature</a> touches or enters the warded area. When you cast the spell, you can designate creatures that won't set off the alarm. </p><p>You also choose whether the alarm is mental or audible. A mental alarm alerts you with a ping in your mind if you are within 1 mile of the warded area. This ping awakens you if you are sleeping. An audible alarm produces the sound of a hand bell for 10 seconds within 60 feet. </p><noscript><link rel='stylesheet' href='https://slot1-images.wikia.nocookie.net/__cb1556201531334/common/extensions/wikia/ImageLazyLoad/css/ImageLazyLoadNoScript.css' /></noscript></div>"
+    );
   }
 }
 
-exports.default = new SpellController()
+exports.default = new SpellController();
 // const basex  = require("basex");
 // const http = require('http')
 // const cors = require('cors')
@@ -54,24 +67,11 @@ exports.default = new SpellController()
 
 // app.listen(1984);
 
-
-
-
-
-
-
-
-
-
-
-
 // var client = new basex.Client({
 //   host: 'localhost',
 //   port: 3001,
 //   path: '/rest/mydatabase'
 // });
-
-
 
 // class SpellController{
 //   async helloworld(req, res){
@@ -80,7 +80,6 @@ exports.default = new SpellController()
 // }
 
 // export default new SpellController()
-
 
 // /*
 //  * This example shows how database commands can be executed.
@@ -93,7 +92,7 @@ exports.default = new SpellController()
 //  * @method print
 //  * @param {} err
 //  * @param {} reply
-//  * @return 
+//  * @return
 //  */
 // function print(err, reply) {
 // 	if (err) {
@@ -103,7 +102,7 @@ exports.default = new SpellController()
 // 		console.log("Execution completed in ",t2-t0," milliseconds.");
 // 		console.dir(reply);
 // 	}
-// }; 
+// };
 // var t0=new Date();
 // let result = client.execute("xquery for $i in 5 return $i",print);
 // client.execute("create db test_db", print);
@@ -120,10 +119,9 @@ exports.default = new SpellController()
 // // drop database
 // client.execute("drop db test_db", print);
 
-
 // client.close(function(){
 // 	var t2=new Date();
-// 	console.log("Closed in ",t2-t0," milliseconds.");	
+// 	console.log("Closed in ",t2-t0," milliseconds.");
 // });
 // var t1=new Date();
 // // not a true time because basex commands not yet done.
@@ -132,17 +130,6 @@ exports.default = new SpellController()
 // // var xq="db:system()";
 // // client.execute("xquery declare option output:method 'jsonml';"+xq,print);
 // // client.close();
-
-
-
-
-
-
-
-
-
-
-
 
 /* sql example
 // const express = require("express");

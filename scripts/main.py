@@ -2,7 +2,7 @@ import fred_module_Joel
 
 key = "623765da-31dd-384c-a5d3-2469016df6ac"
 print("Hello, Python!")
-text = "Fire Bolt. cantrip evocation. Casting Time: 1 action. Range: 120 feet. Components: V S. Duration: Instantaneous. Classes: Sorcerer, Wizard. You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 fire damage. A flammable object hit by this spell ignites if it isn’t being worn or carried."
+text = "F ir e S h ie l d 4th-level evocation Casting Time: 1 action Range: S elf Components: V, S, M (a bit of phosphorus or a firefly) Duration: 10 minutes Thin and wispy flames wreathe your body for the duration, shedding bright light in a 10-foot radius and dim light for an additional 10 feet. You can end the spell early by using an action to dism iss it. The flames provide you with a warm shield or a chill shield, as you choose. The w arm shield grants you resistance to cold damage, and the chill shield grants you resistance to fire damage. In addition, whenever a creature within 5 feet of you hits you with a melee attack, the shield erupts with flame. The attacker takes 2d8 fire damage from a warm shield, or 2d8 cold damage from a cold shield. "
 
 fred_module_Joel.generateRDF(text, "my_output.rdf")
 # graph = "my_output.rdf"

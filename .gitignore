@@ -24,3 +24,8 @@ yarn-debug.log*
 yarn-error.log*
 
 *.js.map
+client/package-lock.json
+package-lock.json
+scripts/__pycache__/fred_module_Joel.cpython-37.pyc
+server/package-lock.json
+/stanfordNLP

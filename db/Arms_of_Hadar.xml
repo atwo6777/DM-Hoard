@@ -1,0 +1,31 @@
+<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr mw-content-text"><table class="article-table">
+<caption><i>1st-level conjuration</i>
+</caption><tbody><tr>
+<th>Casting Time
+</th><td>1 action
+</td></tr>
+<tr>
+<th>Range
+</th><td>Self (10ft radius)
+</td></tr>
+<tr>
+<th>Components
+</th><td>V S
+</td></tr>
+<tr>
+<th>Duration
+</th><td>Instantaneous
+</td></tr></tbody></table>
+<p>Tendrils batter all <a href="/wiki/Creature" title="Creature">creatures</a> within 10 feet of you. They must make a <a href="/wiki/Ability_Scores" title="Ability Scores">Strength</a> save. On a fail, a target takes 2d6 <a href="/wiki/Damage_Type" title="Damage Type">necrotic</a> damage and can't take <a href="/wiki/Order_of_Combat#Reactions" title="Order of Combat">reactions</a> until its next turn. On a success, it takes half damage and suffers no other effects.
+</p><p><b>At Higher Levels:</b> The damage increases by 1d6 for each slot level above 1st.
+</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 1/300000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key engl393dnd5th:pcache:idhash:3888-0!*!0!*!*!*!* -->
+<noscript><link rel="stylesheet" href="https://slot1-images.wikia.nocookie.net/__cb1556201531334/common/extensions/wikia/ImageLazyLoad/css/ImageLazyLoadNoScript.css" /></noscript></div>

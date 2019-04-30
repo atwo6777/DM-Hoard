@@ -6,8 +6,9 @@
   "scripts": {
     "client": "cd client && npm start",
     "server": "cd server && npm start",
-    "start": "concurrently - kill-others \"npm run server\" \"npm run client\"",
-    "installation": "concurrently \"cd client && npm install\" \"cd server && npm install\""
+    "start": "concurrently \"npm run server\" \"npm run client\" \"npm run startNLP\"",
+    "installation": "concurrently \"cd client && npm install\" \"cd server && npm install\"",
+    "startNLP": "cd stanfordNLP && java -mx4g -cp \"*\" edu.stanford.nlp.pipeline.StanfordCoreNLPServer --annotators tokenize,ssplit -outputFormat json -port 9000 -timeout 15000"
   },
   "keywords": [],
   "author": "",

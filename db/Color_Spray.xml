@@ -1,0 +1,31 @@
+<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr mw-content-text"><table class="article-table">
+<caption><i>1st-level illusion</i>
+</caption><tbody><tr>
+<th>Casting Time
+</th><td>1 action
+</td></tr>
+<tr>
+<th>Range
+</th><td>Self (15ft cone)
+</td></tr>
+<tr>
+<th>Components
+</th><td>V S M (Colored powder/sand)
+</td></tr>
+<tr>
+<th>Duration
+</th><td>1 round
+</td></tr></tbody></table>
+<p><a href="/wiki/Creature" title="Creature">Creatures</a> in a 15-foot <a href="/wiki/Magic#Area_of_Effect" title="Magic">cone</a> from you are <a href="/wiki/Conditions#Blinded" title="Conditions">blinded</a>. If a creature is already blind or <a href="/wiki/Conditions#Unconscious" title="Conditions">unconscious</a>, they are not affected. Starting with the creature that has the lowest current hit points, roll 6d10 to see how many creatures you can affect. If the creature with the lowest hit points is less than the total rolled, subtract the hit points from the number, then move onto the next. When you reach a creature whose hit points would go above the number, subtractions applied, they are unaffected and this casting can't blind anything else. 
+</p><p><b>At Higher Levels:</b> Roll an additional 2d10 for each slot level above 1st.
+</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 1/300000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key engl393dnd5th:pcache:idhash:4073-0!*!0!*!*!*!* -->
+<noscript><link rel="stylesheet" href="https://slot1-images.wikia.nocookie.net/__cb1556201531334/common/extensions/wikia/ImageLazyLoad/css/ImageLazyLoadNoScript.css" /></noscript></div>
